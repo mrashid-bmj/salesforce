@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>SF MIAW</title>
+
+</head>
+<body>
+    
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D0Q0000000v50',
+				'MIAW_Web_Test',
+				'https://bmj--staging.sandbox.my.site.com/ESWMIAWWebTest1697019028858',
+				{
+					scrt2URL: 'https://bmj--staging.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://bmj--staging.sandbox.my.site.com/ESWMIAWWebTest1697019028858/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
